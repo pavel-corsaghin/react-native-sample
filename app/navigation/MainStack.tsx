@@ -3,9 +3,9 @@ import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
-import Home from 'app/screens/Home';
 import ThemeController from 'app/components/ThemeController';
 import { MainStackParamList, MainStackRoute } from './@types';
+import MainTabBar from './MainTabBar';
 
 type Screen = {
   name: MainStackRoute;
@@ -17,14 +17,11 @@ type Screen = {
 const Stack = createStackNavigator<MainStackParamList>();
 const screens: Screen[] = [
   {
-    name: 'Home',
+    name: 'Main',
     title: ' ',
-    component: Home,
+    component: MainTabBar,
     options: {
-      title: 'Home',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },
+      headerShown: false,
       headerRight: () => <ThemeController />,
     },
   },
@@ -32,7 +29,7 @@ const screens: Screen[] = [
 
 function AuthStack() {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Main">
       {screens.map(screen => (
         <Stack.Screen
           key={screen.name}

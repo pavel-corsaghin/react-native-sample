@@ -2,7 +2,6 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from 'app/screens/Login';
 import ForgotPassword from 'app/screens/ForgotPassword';
-import ThemeController from 'app/components/ThemeController';
 import { AuthStackParamList, AuthStackRoute } from './@types';
 
 type Screen = {
@@ -34,9 +33,7 @@ function AuthStack() {
           name={screen.name}
           component={screen.component}
           options={{
-            // When logging out, a pop animation feels intuitive
-            // You can remove this if you want the default 'push' animation
-            headerRight: () => <ThemeController />,
+            headerShown: false,
           }}
         />
       ))}

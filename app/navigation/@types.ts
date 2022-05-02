@@ -4,9 +4,8 @@ import { StackNavigationProp } from '@react-navigation/stack';
 
 // Main Tab Bar Navigation props
 export type MainTabBarParamList = {
-  Map: undefined;
-  Events: undefined;
-  Account: undefined;
+  Home: undefined;
+  Profile: undefined;
 };
 export type MainTabBarRoute = keyof MainTabBarParamList;
 export type MainTabBarProp = {
@@ -15,7 +14,7 @@ export type MainTabBarProp = {
 
 // Main Stack Navigation props
 export type MainStackParamList = {
-  Home: undefined;
+  Main: undefined;
 };
 export type MainStackRoute = keyof MainStackParamList;
 export type MainStackNavigation = StackNavigationProp<MainStackParamList>;

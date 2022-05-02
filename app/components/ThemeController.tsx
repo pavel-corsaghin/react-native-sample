@@ -9,7 +9,7 @@ const ThemeController: React.FC = () => {
   const isDark = useSelector(isDarkTheme);
 
   const dispatch = useDispatch();
-  const onToggleTheme = (_: boolean) => dispatch(toggle());
+  const onToggleTheme = () => dispatch(toggle());
   const iconName = isDark ? 'weather-night' : 'white-balance-sunny';
   const iconColor = isDark ? 'white' : 'black';
 
