@@ -1,5 +1,5 @@
 /**
- * Helper class to fixing iPhoneX UI
+ * Helper class to provide utities variables or functions related to device screen
  */
 import { Dimensions, Platform } from 'react-native';
 

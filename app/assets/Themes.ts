@@ -1,3 +1,6 @@
+/* Themes assets
+ */
+import { Colors } from './colors';
 import {
   DarkTheme as PaperDarkTheme,
   DefaultTheme as PaperDefaultTheme,
@@ -11,7 +14,7 @@ export const PaperThemeDefault = {
   ...PaperDefaultTheme,
   colors: {
     ...PaperDefaultTheme.colors,
-    primary: '#3498db',
+    primary: Colors.primary,
   },
 };
 
@@ -19,7 +22,7 @@ export const PaperThemeDark = {
   ...PaperDarkTheme,
   colors: {
     ...PaperDarkTheme.colors,
-    primary: '#3498db',
+    primary: Colors.primaryDark,
   },
 };
 
@@ -33,8 +36,8 @@ export const CombinedDarkTheme = {
   ...NavigationDarkTheme,
   colors: {
     ...NavigationDarkTheme.colors,
-    background: '#303030',
-    card: '#222222',
-    text: '#ffffff',
+    background: Colors.backgroundDark,
+    card: Colors.cardDark,
+    text: Colors.white400,
   },
 };

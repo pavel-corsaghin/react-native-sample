@@ -12,18 +12,16 @@ const Login: React.FC<AuthStackProps<'Login'>> = ({ navigation }) => {
   const onForgot = () => navigation.navigate('ForgotPassword');
   return (
     <View style={styles.container}>
-      <View style={styles.container}>
-        <Button icon="login" mode="outlined" onPress={onLogin}>
-          Login
-        </Button>
-        <Button
-          mode="text"
-          style={styles.forgot}
-          labelStyle={styles.labelStyle}
-          onPress={onForgot}>
-          Forgot Password
-        </Button>
-      </View>
+      <Button icon="login" mode="outlined" onPress={onLogin}>
+        Login
+      </Button>
+      <Button
+        mode="text"
+        style={styles.forgot}
+        labelStyle={styles.labelStyle}
+        onPress={onForgot}>
+        Forgot Password
+      </Button>
     </View>
   );
 };

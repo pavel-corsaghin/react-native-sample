@@ -1,4 +1,10 @@
+/* Colors assets
+ */
 export enum Colors {
+  primary = '#3498db',
+  primaryDark = '#3498db',
+  backgroundDark = '#303030',
+  cardDark = '#222222',
   gray500 = '#2B2B2E',
   gray400 = '#6C6C72',
   gray300 = '#C7C7CC',

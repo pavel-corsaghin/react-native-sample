@@ -8,10 +8,9 @@ import {
   PaperThemeDark,
   CombinedDefaultTheme,
   CombinedDarkTheme,
-} from 'app/assets/Themes';
-import Navigator from 'app/navigation';
+} from 'app/assets/themes';
+import RootStack from 'app/navigation';
 import { I18nextProvider } from 'react-i18next';
-import {} from 'react-redux';
 import i18n from './assets/i18n';
 import storeConfig from './store';
 import { isDarkTheme } from './store/@slices/theme';
@@ -25,7 +24,7 @@ const RootNavigation: React.FC = () => {
 
   return (
     <PaperProvider theme={paperTheme}>
-      <Navigator theme={combinedTheme} />
+      <RootStack theme={combinedTheme} />
     </PaperProvider>
   );
 };
